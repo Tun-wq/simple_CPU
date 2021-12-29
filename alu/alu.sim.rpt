@@ -1,0 +1,299 @@
+Simulator report for alu
+Fri Dec 10 23:18:00 2021
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 122 nodes    ;
+; Simulation Coverage         ;      99.28 % ;
+; Total Number of Transitions ; 1525         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C5T144C8  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; alu.vwf    ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      99.28 % ;
+; Total nodes checked                                 ; 122          ;
+; Total output ports checked                          ; 138          ;
+; Total output ports with complete 1/0-value coverage ; 137          ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 1            ;
+; Total output ports with no 0-value coverage         ; 0            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------+
+; Complete 1/0-Value Coverage                          ;
++----------------+------------------+------------------+
+; Node Name      ; Output Port Name ; Output Port Type ;
++----------------+------------------+------------------+
+; |alu|Add1~0    ; |alu|Add1~0      ; combout          ;
+; |alu|Add1~0    ; |alu|Add1~1      ; cout             ;
+; |alu|Add0~0    ; |alu|Add0~0      ; combout          ;
+; |alu|Add0~0    ; |alu|Add0~1      ; cout             ;
+; |alu|Add1~2    ; |alu|Add1~2      ; combout          ;
+; |alu|Add1~2    ; |alu|Add1~3      ; cout             ;
+; |alu|Add0~2    ; |alu|Add0~2      ; combout          ;
+; |alu|Add0~2    ; |alu|Add0~3      ; cout             ;
+; |alu|Add1~4    ; |alu|Add1~4      ; combout          ;
+; |alu|Add1~4    ; |alu|Add1~5      ; cout             ;
+; |alu|Add0~4    ; |alu|Add0~4      ; combout          ;
+; |alu|Add0~4    ; |alu|Add0~5      ; cout             ;
+; |alu|Add1~6    ; |alu|Add1~6      ; combout          ;
+; |alu|Add1~6    ; |alu|Add1~7      ; cout             ;
+; |alu|Add0~6    ; |alu|Add0~6      ; combout          ;
+; |alu|Add0~6    ; |alu|Add0~7      ; cout             ;
+; |alu|Add1~8    ; |alu|Add1~8      ; combout          ;
+; |alu|Add1~8    ; |alu|Add1~9      ; cout             ;
+; |alu|Add0~8    ; |alu|Add0~8      ; combout          ;
+; |alu|Add0~8    ; |alu|Add0~9      ; cout             ;
+; |alu|Add1~10   ; |alu|Add1~10     ; combout          ;
+; |alu|Add1~10   ; |alu|Add1~11     ; cout             ;
+; |alu|Add0~10   ; |alu|Add0~10     ; combout          ;
+; |alu|Add0~10   ; |alu|Add0~11     ; cout             ;
+; |alu|Add1~12   ; |alu|Add1~12     ; combout          ;
+; |alu|Add1~12   ; |alu|Add1~13     ; cout             ;
+; |alu|Add0~12   ; |alu|Add0~12     ; combout          ;
+; |alu|Add0~12   ; |alu|Add0~13     ; cout             ;
+; |alu|Add1~14   ; |alu|Add1~14     ; combout          ;
+; |alu|Add1~14   ; |alu|Add1~15     ; cout             ;
+; |alu|Add0~14   ; |alu|Add0~14     ; combout          ;
+; |alu|Add0~14   ; |alu|Add0~15     ; cout             ;
+; |alu|Add0~16   ; |alu|Add0~16     ; combout          ;
+; |alu|Add1~16   ; |alu|Add1~16     ; combout          ;
+; |alu|t~64      ; |alu|t~64        ; combout          ;
+; |alu|t~65      ; |alu|t~65        ; combout          ;
+; |alu|t~66      ; |alu|t~66        ; combout          ;
+; |alu|t~67      ; |alu|t~67        ; combout          ;
+; |alu|t~68      ; |alu|t~68        ; combout          ;
+; |alu|t~69      ; |alu|t~69        ; combout          ;
+; |alu|t~70      ; |alu|t~70        ; combout          ;
+; |alu|t~71      ; |alu|t~71        ; combout          ;
+; |alu|t~72      ; |alu|t~72        ; combout          ;
+; |alu|t~73      ; |alu|t~73        ; combout          ;
+; |alu|always0~2 ; |alu|always0~2   ; combout          ;
+; |alu|always0~0 ; |alu|always0~0   ; combout          ;
+; |alu|t~74      ; |alu|t~74        ; combout          ;
+; |alu|t~75      ; |alu|t~75        ; combout          ;
+; |alu|t~76      ; |alu|t~76        ; combout          ;
+; |alu|t~77      ; |alu|t~77        ; combout          ;
+; |alu|t~78      ; |alu|t~78        ; combout          ;
+; |alu|t~79      ; |alu|t~79        ; combout          ;
+; |alu|t~80      ; |alu|t~80        ; combout          ;
+; |alu|t~81      ; |alu|t~81        ; combout          ;
+; |alu|t~82      ; |alu|t~82        ; combout          ;
+; |alu|t~83      ; |alu|t~83        ; combout          ;
+; |alu|t~84      ; |alu|t~84        ; combout          ;
+; |alu|t~85      ; |alu|t~85        ; combout          ;
+; |alu|t~86      ; |alu|t~86        ; combout          ;
+; |alu|t~87      ; |alu|t~87        ; combout          ;
+; |alu|t~88      ; |alu|t~88        ; combout          ;
+; |alu|t~89      ; |alu|t~89        ; combout          ;
+; |alu|t~90      ; |alu|t~90        ; combout          ;
+; |alu|t~91      ; |alu|t~91        ; combout          ;
+; |alu|t~92      ; |alu|t~92        ; combout          ;
+; |alu|t~93      ; |alu|t~93        ; combout          ;
+; |alu|t~94      ; |alu|t~94        ; combout          ;
+; |alu|t~95      ; |alu|t~95        ; combout          ;
+; |alu|t~96      ; |alu|t~96        ; combout          ;
+; |alu|t~97      ; |alu|t~97        ; combout          ;
+; |alu|t~98      ; |alu|t~98        ; combout          ;
+; |alu|t~99      ; |alu|t~99        ; combout          ;
+; |alu|t~100     ; |alu|t~100       ; combout          ;
+; |alu|t~101     ; |alu|t~101       ; combout          ;
+; |alu|t~102     ; |alu|t~102       ; combout          ;
+; |alu|t~103     ; |alu|t~103       ; combout          ;
+; |alu|t~104     ; |alu|t~104       ; combout          ;
+; |alu|t~105     ; |alu|t~105       ; combout          ;
+; |alu|t~106     ; |alu|t~106       ; combout          ;
+; |alu|t~107     ; |alu|t~107       ; combout          ;
+; |alu|t~108     ; |alu|t~108       ; combout          ;
+; |alu|t~109     ; |alu|t~109       ; combout          ;
+; |alu|t~110     ; |alu|t~110       ; combout          ;
+; |alu|t~111     ; |alu|t~111       ; combout          ;
+; |alu|t~112     ; |alu|t~112       ; combout          ;
+; |alu|t~113     ; |alu|t~113       ; combout          ;
+; |alu|t~114     ; |alu|t~114       ; combout          ;
+; |alu|t~115     ; |alu|t~115       ; combout          ;
+; |alu|t~116     ; |alu|t~116       ; combout          ;
+; |alu|t~117     ; |alu|t~117       ; combout          ;
+; |alu|t~118     ; |alu|t~118       ; combout          ;
+; |alu|t~119     ; |alu|t~119       ; combout          ;
+; |alu|t~120     ; |alu|t~120       ; combout          ;
+; |alu|t~121     ; |alu|t~121       ; combout          ;
+; |alu|t~122     ; |alu|t~122       ; combout          ;
+; |alu|t~123     ; |alu|t~123       ; combout          ;
+; |alu|cf~7      ; |alu|cf~7        ; combout          ;
+; |alu|cf~8      ; |alu|cf~8        ; combout          ;
+; |alu|cf~9      ; |alu|cf~9        ; combout          ;
+; |alu|zf~7      ; |alu|zf~7        ; combout          ;
+; |alu|zf~8      ; |alu|zf~8        ; combout          ;
+; |alu|zf~9      ; |alu|zf~9        ; combout          ;
+; |alu|zf~10     ; |alu|zf~10       ; combout          ;
+; |alu|zf~11     ; |alu|zf~11       ; combout          ;
+; |alu|zf~12     ; |alu|zf~12       ; combout          ;
+; |alu|zf~13     ; |alu|zf~13       ; combout          ;
+; |alu|zf~14     ; |alu|zf~14       ; combout          ;
+; |alu|t[0]      ; |alu|t[0]        ; padio            ;
+; |alu|t[1]      ; |alu|t[1]        ; padio            ;
+; |alu|t[2]      ; |alu|t[2]        ; padio            ;
+; |alu|t[3]      ; |alu|t[3]        ; padio            ;
+; |alu|t[4]      ; |alu|t[4]        ; padio            ;
+; |alu|t[5]      ; |alu|t[5]        ; padio            ;
+; |alu|t[6]      ; |alu|t[6]        ; padio            ;
+; |alu|t[7]      ; |alu|t[7]        ; padio            ;
+; |alu|cf        ; |alu|cf          ; padio            ;
+; |alu|zf        ; |alu|zf          ; padio            ;
+; |alu|b[0]      ; |alu|b[0]~corein ; combout          ;
+; |alu|s[3]      ; |alu|s[3]~corein ; combout          ;
+; |alu|a[0]      ; |alu|a[0]~corein ; combout          ;
+; |alu|s[0]      ; |alu|s[0]~corein ; combout          ;
+; |alu|s[2]      ; |alu|s[2]~corein ; combout          ;
+; |alu|s[1]      ; |alu|s[1]~corein ; combout          ;
+; |alu|b[1]      ; |alu|b[1]~corein ; combout          ;
+; |alu|a[1]      ; |alu|a[1]~corein ; combout          ;
+; |alu|b[2]      ; |alu|b[2]~corein ; combout          ;
+; |alu|a[2]      ; |alu|a[2]~corein ; combout          ;
+; |alu|b[3]      ; |alu|b[3]~corein ; combout          ;
+; |alu|a[3]      ; |alu|a[3]~corein ; combout          ;
+; |alu|b[4]      ; |alu|b[4]~corein ; combout          ;
+; |alu|a[4]      ; |alu|a[4]~corein ; combout          ;
+; |alu|a[5]      ; |alu|a[5]~corein ; combout          ;
+; |alu|b[5]      ; |alu|b[5]~corein ; combout          ;
+; |alu|b[6]      ; |alu|b[6]~corein ; combout          ;
+; |alu|a[6]      ; |alu|a[6]~corein ; combout          ;
+; |alu|b[7]      ; |alu|b[7]~corein ; combout          ;
+; |alu|a[7]      ; |alu|a[7]~corein ; combout          ;
++----------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+; |alu|m    ; |alu|m~corein    ; combout          ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Dec 10 23:18:00 2021
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off alu -c alu
+Info: Using vector source file "E:/alu/alu.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      99.28 %
+Info: Number of transitions in simulation is 1525
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 161 megabytes
+    Info: Processing ended: Fri Dec 10 23:18:00 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
