@@ -1,0 +1,12 @@
+module ir(clk, ir_ld, d, ir);
+	input wire clk, ir_ld;
+	input wire [7:0] d;
+	output reg [7:0] ir;
+
+always @(negedge clk) begin
+	ir <= 8'b00000000;
+	if (ir_ld) begin
+		ir <= d;
+	end
+end
+endmodule

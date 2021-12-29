@@ -1,0 +1,66 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.281 ns
+From           : input[4]
+To             : reg_group:inst17|b[4]
+From Clock     : --
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 20.163 ns
+From           : ir:inst4|ir[3]
+To             : c
+From Clock     : CLK
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -0.447 ns
+From           : input[2]
+To             : reg_group:inst17|c[2]
+From Clock     : --
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLK'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 64.53 MHz ( period = 15.496 ns )
+From           : ir:inst4|ir[0]
+To             : reg_group:inst17|a[6]
+From Clock     : CLK
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Clock Setup: 'cpu_clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 118.58 MHz ( period = 8.433 ns )
+From           : lpm_ram_io:inst2|altram:sram|altsyncram:ram_block|altsyncram_jf91:auto_generated|ram_block1a0~porta_address_reg7
+To             : lpm_ram_io:inst2|altram:sram|altsyncram:ram_block|altsyncram_jf91:auto_generated|ram_block1a0~porta_datain_reg0
+From Clock     : cpu_clk
+To Clock       : cpu_clk
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

@@ -1,0 +1,35 @@
+|mux2_1
+in_en => i~7.OUTPUTSELECT
+in_en => i~6.OUTPUTSELECT
+in_en => i~5.OUTPUTSELECT
+in_en => i~4.OUTPUTSELECT
+in_en => i~3.OUTPUTSELECT
+in_en => i~2.OUTPUTSELECT
+in_en => i~1.OUTPUTSELECT
+in_en => i~0.OUTPUTSELECT
+in[0] => i~7.DATAB
+in[1] => i~6.DATAB
+in[2] => i~5.DATAB
+in[3] => i~4.DATAB
+in[4] => i~3.DATAB
+in[5] => i~2.DATAB
+in[6] => i~1.DATAB
+in[7] => i~0.DATAB
+bus[0] => i~7.DATAA
+bus[1] => i~6.DATAA
+bus[2] => i~5.DATAA
+bus[3] => i~4.DATAA
+bus[4] => i~3.DATAA
+bus[5] => i~2.DATAA
+bus[6] => i~1.DATAA
+bus[7] => i~0.DATAA
+i[0] <= i~7.DB_MAX_OUTPUT_PORT_TYPE
+i[1] <= i~6.DB_MAX_OUTPUT_PORT_TYPE
+i[2] <= i~5.DB_MAX_OUTPUT_PORT_TYPE
+i[3] <= i~4.DB_MAX_OUTPUT_PORT_TYPE
+i[4] <= i~3.DB_MAX_OUTPUT_PORT_TYPE
+i[5] <= i~2.DB_MAX_OUTPUT_PORT_TYPE
+i[6] <= i~1.DB_MAX_OUTPUT_PORT_TYPE
+i[7] <= i~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
